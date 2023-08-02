@@ -5,4 +5,9 @@
         <attr name="android:textColor" />
         <attr name="android:fontFamily" />
     </declare-styleable>
+
+    <declare-styleable name="CustomBadgeView">
+        <attr name="badgeColor" format="color" />
+    </declare-styleable>
+
 </resources>
