@@ -12,6 +12,14 @@ class BadgeActivity : AppCompatActivity() {
         binding = ActivityBadgeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var count = 1
+        binding.apply {
+            badgeView.text = count.toString()
 
+            incrementButton.setOnClickListener {
+                count += 1
+                badgeView.text = count.toString()
+            }
+        }
     }
 }
